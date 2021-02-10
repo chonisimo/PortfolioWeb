@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color:#f7f7e8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #557174;
+    background-color: #f7f7e8;
+    z-index: 1;
+}
+
+.cabezal {
+    display: inline-flex;
+    width: 100%;
+}
+
+.nombre {
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+    padding: 10px;
+    color: #557174;
+}
+
+.atajos {
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px 0;
+    top: 5%;
+    right: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    color: #557174;
+}
+
+.cabezal li {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    border-left: 3px solid #557174;
+}
+
+a {
+    color: #557174;
+    text-decoration: none;
+}

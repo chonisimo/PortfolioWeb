@@ -1,0 +1,26 @@
+{
+  "name": "portfolioweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

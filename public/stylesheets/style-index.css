@@ -1,0 +1,238 @@
+main {
+    width: 100%;
+    
+}
+
+.pitch {
+    margin: 0 auto;
+    padding: 150px 0;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    width: 60%;
+    position: relative;
+    animation-name: dolor;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    color:  #557174;
+}
+
+@keyframes dolor {
+    0% {bottom: -20px; opacity: 0;}
+    40% {opacity: 0.8;}
+    75% {opacity: 1;}
+    100% {bottom: 0px; opacity: 1;}
+}
+
+img {
+    height: 350px;
+    width: 450px;
+    border: 6px solid #f7f7e8;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: linear 0.5s border;
+}
+
+img:hover {
+    border-color:  #557174;
+}
+
+.trabajos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.linea {
+    width: 110%;
+    margin: 40px 0;
+    height: 10px;
+    background-color: #c7cfb7;
+    border: 0;
+    border-radius: 15px;
+}
+
+.derecha {
+    float: right;
+}
+
+h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #9dad7f;
+}
+
+.ficha-1 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: right;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+p {
+    color: #9dad7f;
+}
+
+.ficha-1 img {
+    margin-left: 10px;
+}
+
+.texto-1 {
+    width: 55%;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-right .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-1.is-visible {
+    opacity: 1;
+    margin-right: 40px;
+}
+
+/*
+animation-name: editorial;
+animation-duration: 4s;
+animation-timing-function: ease-out;
+animation-iteration-count: 1;
+@keyframes editorial {
+    0% {margin-right: -20px; opacity: 0;}
+    30% {opacity: 0.7;}
+    100% {margin-right: 20px; opacity: 1;}
+}
+*/
+
+.ficha-2 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.ficha-2 img {
+    margin-right: 10px;
+}
+
+.texto-2 {
+    width: 55%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-left .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-2.is-visible {
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.ficha-3 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: right;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.ficha-3 img {
+    margin-left: 10px;
+}
+
+.texto-3 {
+    width: 55%;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-right .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-3.is-visible {
+    opacity: 1;
+    margin-right: 40px;
+}
+
+.ficha-4 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.ficha-4 img {
+    margin-right: 10px;
+}
+
+.texto-4 {
+    width: 55%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-left .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-4.is-visible {
+    opacity: 1;
+    margin-left: 40px;
+}
+
+.ficha-5 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: right;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.ficha-5 img {
+    margin-left: 10px;
+}
+
+.texto-5 {
+    width: 55%;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-right .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-5.is-visible {
+    opacity: 1;
+    margin-right: 40px;
+}
+
+.ficha-6 {
+    padding: 10px 0;
+    display: inline-flex;
+    font-family: 'Lexend Mega', sans-serif;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+.ficha-6 img {
+    margin-right: 10px;
+}
+
+.texto-6 {
+    width: 55%;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity .3s .25s ease-out, margin-left .5s .25s ease-out;
+    will-change: opacity, margin-right;
+}
+
+.texto-6.is-visible {
+    opacity: 1;
+    margin-left: 40px;
+}

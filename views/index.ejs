@@ -1,0 +1,79 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/style-index.css">
+</head>
+<body>
+    <main>
+        <div class="pitch">
+            <h2>Ignacio Pesquero Bordón, iniciando un camino como desarrollador web con dedicación y perseverancia.</h2>
+        </div>
+        <div class="trabajos">
+            <h3>Trabajos</h3>
+            <div class="ficha-1">
+                <a href="https://boinaeditorialdisplay.herokuapp.com/"><img src="https://i.imgur.com/ubXBQPL.jpg" alt="Boina editorial"></a>
+                <p class="texto-1 show-on-scroll">Pagina de catalogo editorial donde se puede visualizar cada producto. Realizada en HTML5 con ejs, CSS3, express y armando toda la base de datos con SQLite.</p>
+            </div>
+            <hr class="linea derecha">
+            <div class="ficha-2">
+                <p class="texto-2 show-on-scroll">Pagina de toda la filmografía del estudio detallando los datos de cada película. Realizada con React.js montando la base de datos de su API publica.</p>
+                <a href="https://pacific-sierra-39850.herokuapp.com/"><img src="https://i.imgur.com/kMB04Ry.jpg" alt="Ghilbli films"></a>
+            </div>
+            <hr class="linea izquierda">
+            <div class="ficha-3">
+                <a href="https://codepen.io/Chona/full/ZEYjJPX"><img src="https://i.imgur.com/hmIOlFo.jpg" alt="Chona's lucky game"></a>
+                <p class="texto-3 show-on-scroll">Simple juego de azar con personajes de historietas. Realizado con HTML5, CSS3. Y JS.</p>
+            </div>
+            <hr class="linea derecha">
+            <div class="ficha-4">
+                <p class="texto-4 show-on-scroll">Una pagina que genera al azar personajes de historietas y su descripción. Realizado con simple HTML5, CSS3 y JS.</p>
+                <a href="https://codepen.io/Chona/full/ExarQGm"><img src="https://i.imgur.com/FHVTraI.jpg" alt="Chona's generator"></a>
+            </div>
+            <hr class="linea izquierda">
+            <div class="ficha-5">
+                <a href="https://codepen.io/Chona/full/mdPebxz"><img src="https://i.imgur.com/RxFo9IV.jpg" alt="Chona's frase maker"></a>
+                <p class="texto-5 show-on-scroll">Crea frases y personajes en base a los inputs otorgados. Realizado con simple HTML5, CSS3 y JS.</p>
+            </div>
+            <hr class="linea derecha">
+            <div class="ficha-6">
+                <p class="texto-6 show-on-scroll">Sexta pagina a vender</p>
+                <a href="https://ignaciopesquerobordonweb.herokuapp.com/"><img src="" alt="Zelda web"></a>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    var scroll = window.requestAnimationFrame ||
+             function(callback) {
+                 window.setTimeout(callback, 1000/60)
+             };
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+function loop() {
+    elementsToShow.forEach(function(element) {
+        if(isElementInViewport(element)) {
+            element.classList.add('is-visible');
+        } else {
+            element.classList.remove('is-visible');
+        }
+    });
+    scroll(loop);
+}
+
+loop();
+
+function isElementInViewport (el) {
+
+    // Special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    );
+}
+</script>
